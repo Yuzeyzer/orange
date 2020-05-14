@@ -6,10 +6,6 @@
 	height: 100vh;
 	font-family: Montserrat,sans-serif;
 	font-size: vw(12);
-
-	@media screen and (max-width:1024) {
-		font-size: vmin(12);
-	}
 }
 ul {
 	list-style: none;
@@ -22,15 +18,17 @@ ul {
 	text-transform: uppercase;
 	font-weight: 600;
 
-	@media screen and (max-width:1024) {
+	@include mobile {
+		padding: 0 vmin(20);
+		justify-content: space-between;
 		padding-top: vmin(20);
 	}
 }
 .logo {
 	font-size: vw(40);
 
-	@media screen and (max-width:1024) {
-		font-size: vmin(40);
+	@include mobile {
+		font-size: vmin(26);
 	}
 }
 
@@ -43,10 +41,6 @@ ul {
 .menu-links ul li {
 	display: inline-block;
 	padding-right: vw(20);
-
-	@media screen and (max-width:1024) {
-		padding-right: vmin(20);
-	}
 }
 .menu-links ul li a {
 	position: relative;
@@ -73,8 +67,14 @@ ul {
 .cart {
 	font-size: vw(20);
 
-	@media screen and (max-width:1024) {
+	@include mobile {
 		font-size: vmin(20);
+	}
+}
+
+.search, .account {
+	@include mobile {
+		display: none;
 	}
 }
 .content {
@@ -93,8 +93,8 @@ ul {
 	text-transform: uppercase;
 	font-weight: 700;
 
-	@media screen and (max-width:1024) {
-		font-size: vmin(200);
+	@include mobile {
+		font-size: vmin(60);
 	}
 }
 
@@ -112,6 +112,10 @@ ul {
 	flex: 0;
 	letter-spacing: vw(0.50);
 	color: #999;
+
+	@include mobile {
+		letter-spacing: vmin(0.50);
+	}
 }
 
 .pages span {
@@ -119,8 +123,8 @@ ul {
 	color: #000;
 	font-weight: 600;
 
-	@media screen and (max-width:1024) {
-		font-size: vmin(60);
+	@include mobile {
+		font-size: vmin(40);
 	}
 }
 
@@ -181,8 +185,8 @@ ul {
 	max-width: 100%;
 	animation: float 4s ease-in-out infinite;
 
-	@media screen and (max-width:1024) {
-		height: vmin(500);
+	@include mobile {
+		min-height: vmin(300);
 	}
 }
 
@@ -211,9 +215,8 @@ ul {
 	min-height: vw(100);
 	object-fit: contain;
 
-	@media screen and (max-width:1024) {
-		max-height: vmin(150);
-		min-height: vmin(100);
+	@include mobile {
+		min-height: vmin(60);
 	}
 }
 .leaves .layer {
@@ -222,23 +225,46 @@ ul {
 .leaves .layer:nth-child(1) {
 	top: vw(-100) !important;
 	left: vw(-480) !important;
+
+		@include mobile {
+			top: vmin(-100) !important;
+			left: vmin(-180) !important;
+		}
 }
 .leaves .layer:nth-child(2) {
 	top: vw(10) !important;
 	left: vw(160) !important;
+
+		@include mobile {
+			top: vmin(15) !important;
+			left: vmin(100) !important;
+		}
 }
 .leaves .layer:nth-child(3) {
 	top: vw(-300) !important;
 	left: vw(160) !important;
 	z-index: -1;
+
+		@include mobile {
+			top: vmin(-150) !important;
+			left: vmin(60) !important;
+		}
 }
 .leaves .layer:nth-child(4) {
 	top: -10px !important;
 	left: vw(320) !important;
+
+		@include mobile {
+
+		}
 }
 .leaves .layer:nth-child(5) {
 	top: vw(200) !important;
 	left: vw(-320) !important;
+
+		@include mobile {
+
+		}
 }
 .arrows button {
 	border: 0.10px solid #999;
@@ -276,17 +302,13 @@ ul {
 }
 
 .arrows {
-	text-align: center;
+	
+	@include mobile {
+		display: none;
+	}
 }
 
 .arrows i {
 	width: vw(10);
 	height: vw(13);
-
-	@include mobile {
-		width: 100%;
-		height: 100%;
-		text-align: center;
-		font-size: vmin(10);
-	}
 }
