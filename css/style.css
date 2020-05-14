@@ -1,22 +1,8 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-a {
-    text-decoration: none;
-    color: #000;
-}
-html {
-    font-size: 10px;
-}
-body {
-    overflow: hidden;
-}
 .wrapper {
     width: 100%;
     height: 100vh;
     font-family: Montserrat,sans-serif;
-    font-size: 1.2rem;
+    font-size: 12px;
 }
 ul {
     list-style: none;
@@ -25,16 +11,16 @@ ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 2rem;
+    padding-top: 20px;
     text-transform: uppercase;
     font-weight: 600;
 }
 .logo {
-    font-size: 4rem;
+    font-size: 40px;
 }
 .menu-links ul li {
     display: inline-block;
-    padding-right: 2rem;
+    padding-right: 20px;
 }
 .menu-links ul li a {
     position: relative;
@@ -43,9 +29,9 @@ ul {
     content: '';
     position: absolute;
     width: 100%;
-    height: 0.2rem;
+    height: 2px;
     background: #000;
-    bottom: -.5rem;
+    bottom: -5px;
     transition: 0.4s;
     transform: scale(0);
 }
@@ -54,7 +40,7 @@ ul {
 }
 .search,
 .cart {
-    font-size: 2rem;
+    font-size: 20px;
 }
 .content {
     position: absolute;
@@ -68,25 +54,25 @@ ul {
 
 .title {
     flex: 0 0 100%;
-    font-size: 20rem;
+    font-size: 200px;
     text-transform: uppercase;
     font-weight: 700;
 }
 
 .tagline {
     flex: 1;
-    font-size: 3rem;
+    font-size: 30px;
     color: #999;
 }
 
 .pages {
     flex: 0;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.50px;
     color: #999;
 }
 
 .pages span {
-    font-size: 6rem;
+    font-size: 60px;
     color: #000;
     font-weight: 600;
 }
@@ -98,11 +84,11 @@ ul {
 
 .more a{
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 20px;
     color: #fff;
     background: #000;
-    padding: 1rem 3rem;
-    border-radius: 1rem;
+    padding: 10px 30px;
+    border-radius: 10px;
     transition: 0.3s;
 }
 .more a:hover {
@@ -113,8 +99,8 @@ ul {
 }
 
 .desc p:nth-child(1) {
-    font-size: 3rem;
-    margin-bottom: 2rem;
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 
 .desc p:nth-child(2) {
@@ -132,7 +118,7 @@ ul {
     z-index: 0;
 }
 .juice img {
-    max-height: 50rem;
+    max-height: 500px;
     max-width: 100%;
     animation: float 4s ease-in-out infinite;
 }
@@ -164,37 +150,37 @@ ul {
     position: absolute;
 }
 .leaves .layer:nth-child(1) {
-    top: -10rem !important;
-    left: -48rem !important;
+    top: -100px !important;
+    left: -480px !important;
 }
 .leaves .layer:nth-child(2) {
-    top: 1rem !important;
-    left: 16rem !important;
+    top: 10px !important;
+    left: 160px !important;
 }
 .leaves .layer:nth-child(3) {
-    top: -30rem !important;
-    left: 16rem !important;
+    top: -300px !important;
+    left: 160px !important;
     z-index: -1;
 }
 .leaves .layer:nth-child(4) {
-    top: -1rem !important;
-    left: 32rem !important;
+    top: -10px !important;
+    left: 320px !important;
 }
 .leaves .layer:nth-child(5) {
-    top: 20rem !important;
-    left: -32rem !important;
+    top: 200px !important;
+    left: -320px !important;
 }
 .arrows button {
-    border: 0.1rem solid #999;
+    border: 0.10px solid #999;
     background: transparent;
     border-radius: 50%;
     outline: none;
-    width: 5rem;
-    height: 5rem;
+    width: 50px;
+    height: 50px;
     transition: 0.3s;
     cursor: pointer;
     text-align: center;
-    padding-top: 0.4rem;
+    padding-top: 0.40px;
 }
 .arrows button:hover {
     color: #fff;
@@ -203,12 +189,12 @@ ul {
 .arrows .prev {
     position: absolute;
     top: 50%;
-    left: 10rem;
+    left: 100px;
 }
 .arrows .next {
     position: absolute;
     top: 50%;
-    right: 10rem;
+    right: 100px;
 }
 
 

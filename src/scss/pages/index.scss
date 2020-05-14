@@ -1,0 +1,292 @@
+@import '../main';
+// @import './functions';
+// @import './pages/index.scss';
+.wrapper {
+	width: 100%;
+	height: 100vh;
+	font-family: Montserrat,sans-serif;
+	font-size: vw(12);
+
+	@media screen and (max-width:1024) {
+		font-size: vmin(12);
+	}
+}
+ul {
+	list-style: none;
+}
+.nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: vw(20);
+	text-transform: uppercase;
+	font-weight: 600;
+
+	@media screen and (max-width:1024) {
+		padding-top: vmin(20);
+	}
+}
+.logo {
+	font-size: vw(40);
+
+	@media screen and (max-width:1024) {
+		font-size: vmin(40);
+	}
+}
+
+.menu-links {
+	@include mobile {
+		display: none;
+	}
+}
+
+.menu-links ul li {
+	display: inline-block;
+	padding-right: vw(20);
+
+	@media screen and (max-width:1024) {
+		padding-right: vmin(20);
+	}
+}
+.menu-links ul li a {
+	position: relative;
+}
+.menu-links ul li a:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: vw(2);
+	background: #000;
+	bottom: vw(-5);
+	transition: 0.4s;
+	transform: scale(0);
+
+	@media screen and (max-width:1024) {
+		height: vmin(2);
+		bottom: vmin(-5);
+	}
+}
+.menu-links ul li a:hover:before {
+	transform: scale(1);
+}
+.search,
+.cart {
+	font-size: vw(20);
+
+	@media screen and (max-width:1024) {
+		font-size: vmin(20);
+	}
+}
+.content {
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.title {
+	flex: 0 0 100%;
+	font-size: vw(200);
+	text-transform: uppercase;
+	font-weight: 700;
+
+	@media screen and (max-width:1024) {
+		font-size: vmin(200);
+	}
+}
+
+.tagline {
+	flex: 1;
+	font-size: vw(30);
+	color: #999;
+
+	@media screen and (max-width:1024) {
+		font-size: vmin(30);
+	}
+}
+
+.pages {
+	flex: 0;
+	letter-spacing: vw(0.50);
+	color: #999;
+}
+
+.pages span {
+	font-size: vw(60);
+	color: #000;
+	font-weight: 600;
+
+	@media screen and (max-width:1024) {
+		font-size: vmin(60);
+	}
+}
+
+.more {
+	flex: 1;
+	cursor: pointer;
+}
+
+.more a{
+	text-decoration: none;
+	font-size: vw(20);
+	color: #fff;
+	background: #000;
+	padding: vw(10) vw(30);
+	border-radius: vw(10);
+	transition: 0.3s;
+
+	@media screen and (max-width:1024) {
+		font-size: vmin(20);
+		padding: vmin(10) vmin(30);
+		border-radius: vmin(10);
+	}
+}
+.more a:hover {
+	background:#fe9b34 ;
+}
+.desc {
+	flex: 0 0 32%;
+}
+
+.desc p:nth-child(1) {
+	font-size: vw(30);
+	margin-bottom: vw(20);
+
+	@media screen and (max-width:1024) {
+		font-size: vmin(30);
+		margin-bottom: vmin(20);
+	}
+}
+
+.desc p:nth-child(2) {
+	line-height: 2;
+}
+
+.desc span {
+	color: #aecd31;
+}
+
+.juice {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 0;
+}
+.juice img {
+	max-height: vw(500);
+	min-height: vw(500);
+	max-width: 100%;
+	animation: float 4s ease-in-out infinite;
+
+	@media screen and (max-width:1024) {
+		height: vmin(500);
+	}
+}
+
+@keyframes float {
+	0% {
+			transform: translate(-50%, -46%);
+	}
+	50% {
+			transform: translate(-50%, -54%);
+	}
+	100% {
+			transform: translate(-50%, -46%);
+	}
+}
+
+.leaves {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+.leaves img {
+	max-width: 100%;
+	max-height: vw(150);
+	min-height: vw(100);
+	object-fit: contain;
+
+	@media screen and (max-width:1024) {
+		max-height: vmin(150);
+		min-height: vmin(100);
+	}
+}
+.leaves .layer {
+	position: absolute;
+}
+.leaves .layer:nth-child(1) {
+	top: vw(-100) !important;
+	left: vw(-480) !important;
+}
+.leaves .layer:nth-child(2) {
+	top: vw(10) !important;
+	left: vw(160) !important;
+}
+.leaves .layer:nth-child(3) {
+	top: vw(-300) !important;
+	left: vw(160) !important;
+	z-index: -1;
+}
+.leaves .layer:nth-child(4) {
+	top: -10px !important;
+	left: vw(320) !important;
+}
+.leaves .layer:nth-child(5) {
+	top: vw(200) !important;
+	left: vw(-320) !important;
+}
+.arrows button {
+	border: 0.10px solid #999;
+	background: transparent;
+	border-radius: 50%;
+	outline: none;
+	width: vw(50);
+	height: vw(50);
+	transition: 0.3s;
+	cursor: pointer;
+	text-align: center;
+	padding-top: 0.40px;
+}
+.arrows button:hover {
+	color: #fff;
+	background-color: #000;
+}
+.arrows .prev {
+	position: absolute;
+	top: 50%;
+	left: vw(100);
+
+	@media screen and (max-width:1024) {
+		left: vmin(100);
+	}
+}
+.arrows .next {
+	position: absolute;
+	top: 50%;
+	right: vw(100);
+
+	@media screen and (max-width:1024) {
+		right: vmin(100);
+	}
+}
+
+.arrows {
+	text-align: center;
+}
+
+.arrows i {
+	width: vw(10);
+	height: vw(13);
+
+	@include mobile {
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		font-size: vmin(10);
+	}
+}

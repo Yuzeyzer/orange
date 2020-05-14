@@ -1,0 +1,267 @@
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  font-family: Montserrat,sans-serif;
+  font-size: 12px;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.logo {
+  font-size: 40px;
+}
+
+.menu-links ul li {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.menu-links ul li a {
+  position: relative;
+}
+
+.menu-links ul li a:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  bottom: -5px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.menu-links ul li a:hover:before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.search,
+.cart {
+  font-size: 20px;
+}
+
+.content {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  font-size: 200px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.tagline {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 30px;
+  color: #999;
+}
+
+.pages {
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  letter-spacing: 0.50px;
+  color: #999;
+}
+
+.pages span {
+  font-size: 60px;
+  color: #000;
+  font-weight: 600;
+}
+
+.more {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  cursor: pointer;
+}
+
+.more a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  background: #000;
+  padding: 10px 30px;
+  border-radius: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.more a:hover {
+  background: #fe9b34;
+}
+
+.desc {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 32%;
+          flex: 0 0 32%;
+}
+
+.desc p:nth-child(1) {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.desc p:nth-child(2) {
+  line-height: 2;
+}
+
+.desc span {
+  color: #aecd31;
+}
+
+.juice {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+}
+
+.juice img {
+  max-height: 500px;
+  max-width: 100%;
+  -webkit-animation: float 4s ease-in-out infinite;
+          animation: float 4s ease-in-out infinite;
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translate(-50%, -46%);
+            transform: translate(-50%, -46%);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -54%);
+            transform: translate(-50%, -54%);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -46%);
+            transform: translate(-50%, -46%);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translate(-50%, -46%);
+            transform: translate(-50%, -46%);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -54%);
+            transform: translate(-50%, -54%);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -46%);
+            transform: translate(-50%, -46%);
+  }
+}
+
+.leaves {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.leaves img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.leaves .layer {
+  position: absolute;
+}
+
+.leaves .layer:nth-child(1) {
+  top: -100px !important;
+  left: -480px !important;
+}
+
+.leaves .layer:nth-child(2) {
+  top: 10px !important;
+  left: 160px !important;
+}
+
+.leaves .layer:nth-child(3) {
+  top: -300px !important;
+  left: 160px !important;
+  z-index: -1;
+}
+
+.leaves .layer:nth-child(4) {
+  top: -10px !important;
+  left: 320px !important;
+}
+
+.leaves .layer:nth-child(5) {
+  top: 200px !important;
+  left: -320px !important;
+}
+
+.arrows button {
+  border: 0.10px solid #999;
+  background: transparent;
+  border-radius: 50%;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 0.40px;
+}
+
+.arrows button:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.arrows .prev {
+  position: absolute;
+  top: 50%;
+  left: 100px;
+}
+
+.arrows .next {
+  position: absolute;
+  top: 50%;
+  right: 100px;
+}
+/*# sourceMappingURL=index.css.map */
