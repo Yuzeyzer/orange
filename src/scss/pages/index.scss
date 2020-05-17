@@ -1,6 +1,14 @@
 @import '../main';
 // @import './functions';
 // @import './pages/index.scss';
+
+
+.container {
+	max-width: vw(1280);
+	margin: 0 auto;
+
+
+}
 .wrapper {
 	width: 100%;
 	height: 100vh;
@@ -12,7 +20,7 @@ ul {
 }
 .nav {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	padding-top: vw(20);
 	text-transform: uppercase;
@@ -24,6 +32,15 @@ ul {
 		padding-top: vmin(20);
 	}
 }
+.nav-right {
+	display: flex;
+	margin-right: vw(100);
+
+	@include mobile {
+		margin-right: vmin(100);
+	}
+}
+
 .logo {
 	font-size: vw(40);
 
@@ -66,9 +83,10 @@ ul {
 .search,
 .cart {
 	font-size: vw(20);
+	margin-left: vw(20);
 
 	@include mobile {
-		font-size: vmin(20);
+		display: none;
 	}
 }
 

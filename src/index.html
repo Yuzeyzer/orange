@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
@@ -12,58 +13,83 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./scss/result/index.css">
 </head>
+
 <body>
-<div class="wrapper">
-    <nav class="nav">
-        <div class="logo">Clean Juice</div>
-        <div class="menu-links">
-            <ul>
-                <li><a href="#">Locations</a></li>
-                <li><a href="#">Our menu</a></li>
-                <li><a href="#">Our story</a></li>
-                <li><a href="#">Meet our teem</a></li>
-                <li><a href="#">own a clean juice</a></li>
-                <li><a href="#">contact us</a></li>
+    <!-- Full Menu -->
+    <div class="full-menu">
+        <a href="#0" class="modal-close"></a>
+    </div>
+    <div class="cd-transition-layer visible opening">
+        <div class="bg-layer"></div>
+    </div>
+    <!-- Ink Transition -->
+    <div class="wrapper1">
+        <section class="main">
+        </section>
+    </div>
+    <div class="wrapper">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">Clean Juice</div>
+                <div class="menu-links">
+                    <ul>
+                        <li><a href="#">Locations</a></li>
+                        <li><a href="#">Our menu</a></li>
+                        <li><a href="#">Our story</a></li>
+                        <li><a href="#">Meet our teem</a></li>
+                        <li><a href="#">own a clean juice</a></li>
+                        <li><a href="#">contact us</a></li>
+                    </ul>
+                </div>
+                <div class="nav-right">
+                    <div class="search">
+                        <i class="fa fa-search"></i>
+                    </div>
+                    <div class="cart">
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="nav-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+        <div class="content">
+            <div class="tagline">Find your clean juice</div>
+            <div class="pages"><span>2</span>/21</div>
+            <div class="title">Orange</div>
+            <div class="more"><a href="#">Show all the juices</a></div>
+            <div class="desc">
+                <p>Your <span>healthy</span> life <br>
+                    starts here with us
+                </p>
+                <p>
+                    A family owned company founded with the purpose of giving
+                    your family access to clean, organic products while you are go.
+                </p>
+            </div>
+        </div>
+        <div class="juice">
+            <img src="./img/juice.png" alt="">
+        </div>
+        <div class="leaves">
+            <ul id="scene">
+                <li class="layer" data-depth="-.1"><img src="./img/leaf1.png" alt=""></li>
+                <li class="layer" data-depth="-.3"><img src="./img/leaf2.png" alt=""></li>
+                <li class="layer" data-depth="-1.5"><img src="./img/leaf3.png" alt=""></li>
+                <li class="layer" data-depth=".1"><img src="./img/leaf4.png" alt=""></li>
+                <li class="layer" data-depth=".3"><img src="./img/leaf5.png" alt=""></li>
             </ul>
         </div>
-        <div class="search">
-            <i class="fa fa-search"></i>
-        </div>
-        <div class="account">My account</div>
-        <div class="cart"><i class="fa fa-shopping-cart"></i></div>
-    </nav>
-    <div class="content">
-        <div class="tagline">Find your clean juice</div>
-        <div class="pages"><span>2</span>/21</div>
-        <div class="title">Orange</div>
-        <div class="more"><a href="#">Show all the juices</a></div>
-        <div class="desc">
-            <p>Your <span>healthy</span> life <br>
-                starts here with us
-            </p>
-            <p>
-                A family owned company founded with the purpose of giving
-                your family access to clean, organic products while you are go.
-            </p>
+        <div class="arrows">
+            <button class="prev"><i class="fa fa-chevron-left"></i></button>
+            <button class="next"><i class="fa fa-chevron-right"></i></button>
         </div>
     </div>
-    <div class="juice">
-        <img src="./img/juice.png" alt="">
-    </div>
-    <div class="leaves">
-        <ul id="scene">
-            <li class="layer" data-depth="-.1"><img src="./img/leaf1.png" alt=""></li>
-            <li class="layer" data-depth="-.3"><img src="./img/leaf2.png" alt=""></li>
-            <li class="layer" data-depth="-1.5"><img src="./img/leaf3.png" alt=""></li>
-            <li class="layer" data-depth=".1"><img src="./img/leaf4.png" alt=""></li>
-            <li class="layer" data-depth=".3"><img src="./img/leaf5.png" alt=""></li>
-        </ul>
-    </div>
-    <div class="arrows">
-        <button class="prev"><i class="fa fa-chevron-left"></i></button>
-        <button class="next"><i class="fa fa-chevron-right"></i></button>
-    </div>
-</div>
-<script src="./js/index.js"></script>
+    <script src="./js/libraries/jquery.js"></script>
+    <script src="./js/index.js"></script>
 </body>
+
 </html>

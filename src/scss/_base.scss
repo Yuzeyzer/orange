@@ -3,6 +3,7 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+
 a {
 	text-decoration: none;
 	color: #000;
@@ -10,4 +11,6 @@ a {
 
 body {
 	overflow: hidden;
+	min-width: 100vw;
+	min-height: 100vh;
 }
