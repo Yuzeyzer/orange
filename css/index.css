@@ -72,7 +72,7 @@ li {
   height: 45px;
   width: 45px;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.3) url(../../img/close.svg) no-repeat center center;
+  background: rgba(0, 0, 0, 0.3) url(../img/close.svg) no-repeat center center;
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
@@ -133,7 +133,7 @@ li {
   height: 100%;
   /* our sprite is composed of 25 frames */
   width: 2500%;
-  background: url(../../img/ink.png) no-repeat 0 0;
+  background: url(../img/ink.png) no-repeat 0 0;
   background-size: cover;
   -webkit-transition: 0.6s;
   transition: 0.6s;
